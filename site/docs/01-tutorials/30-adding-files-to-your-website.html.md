@@ -1,10 +1,17 @@
 # Adding Files to Your Site
 
+<div class="intro" markdown="1">
 As you are likely aware, a website consists of **files** that will be served to clients by a **web server**. These files can be HTML files (like this page), CSS stylesheets, JavaScript files, XML or JSON data files -- there's probably more.
+</div>
 
 At its most basic, Flutterby operates by reading all files from your `site` directory and exporting them to static files in your `_build` directory (or serving them directly to a client when using `flutterby serve`.)
 
 It follows these rules when doing so:
+
+#### Use any structure
+
+Flutterby doesn't impose any specific structure on the contents of your `site` directory; unlike many other tools of its kind, it simply considers your website to be a tree of files that are intended to be exported or served.
+
 
 #### Normal files that don't require processing
 
@@ -24,31 +31,3 @@ You can chain any number of these extensions; eg. a file named `file.html.md.erb
 By default, all files present in your `site` directory will be exported. If you don't want to export specific files or folders, make sure their name starts with an underscore (eg. `_secret.html`).
 
 Files with names starting with underscores will not be exported to the static version of your site, nor served through `flutterby serve`.
-
-
-
-#### Front Matter
-
-You can optionally prefix any file with frontmatter, and its data will automatically be extracted and assigned to the originating page. (You can later use query this data when adding dynamic templates or code to your project.)
-
-A file with YAML frontmatter looks like this:
-
-~~~ bash
----
-title: Hello World
-date: 2017-04-01
----
-
-This is my post!
-~~~
-
-Flutterby also supports [TOML](https://github.com/toml-lang/toml) frontmatter -- simply use `+++` instead of `---` to separate your frontmatter from the rest of your document:
-
-~~~ bash
-+++
-title = "Hello World"
-date = 2017-04-01
-+++
-
-This is my post!
-~~~
