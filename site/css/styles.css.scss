@@ -67,10 +67,16 @@ td+td {
   padding-left: 10px;
 }
 
+%collapse-margins {
+  >*:first-child { margin-top: 0 }
+  >*:last-child { margin-bottom: 0 }
+}
+
 %box {
+  @extend %collapse-margins;
   background-color: #efefef;
   border-radius: 2px;
-  padding: 0.5rem 0.8rem;
+  padding: 0.8em 1em;
 }
 
 .navigation {
@@ -78,4 +84,9 @@ td+td {
   background-color: oldlace;
   font-size: 82.5%;
   margin-top: 3rem;
+}
+
+.intro {
+  @extend %box;
+  background-color: rgb(213, 238, 209);
 }
