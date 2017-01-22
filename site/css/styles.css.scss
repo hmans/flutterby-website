@@ -66,3 +66,16 @@ td {
 td+td {
   padding-left: 10px;
 }
+
+%box {
+  background-color: #efefef;
+  border-radius: 2px;
+  padding: 0.5rem 0.8rem;
+}
+
+.navigation {
+  @extend %box;
+  background-color: oldlace;
+  font-size: 82.5%;
+  margin-top: 3rem;
+}
