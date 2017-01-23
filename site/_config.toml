@@ -1,7 +1,4 @@
 # This is your site's configuration file.
 
 [site]
-title = "My Flutterby Site"
-description = """
-Yayyyyy!
-"""
+title = "Flutterby"
