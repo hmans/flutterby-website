@@ -20,7 +20,8 @@ html
             li = link_to "Home", "/"
             li = link_to "Documentation", "/docs/"
     
-      = yield
+      main
+        = yield
       
       footer role="main"
         p You're looking at #{link_to "flutterby.run", "/"}, the
