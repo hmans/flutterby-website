@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
 
+$col-1: rgb(226, 177, 231);
+$col-2: rgb(213, 238, 209);
+$col-3: oldlace;
+$col-4: rgb(115, 130, 193);
+
+$col-links: $col-4;
+
 body {
   background-color: #fff;
   color: #444;
@@ -12,13 +19,45 @@ div.container {
   padding: 30px;
 }
 
-footer[role="main"] {
-  margin-top: 80px;
-  border-top: 3px solid lightgrey;
-  padding-top: 20px;
+
+%header-and-footer {
   font-size: 82.5%;
   color: grey;
   a { color: inherit }
+}
+
+header[role="main"] {
+  @extend %header-and-footer;
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+
+      a {
+        display: inline-block;
+        background-color: #e8e8e8;
+        color: black;
+        text-decoration: none;
+        padding: 3px 10px;
+
+        border-radius: 7px 0;
+
+        &:hover {
+          background-color: $col-1;
+        }
+      }
+    }
+  }
+}
+
+footer[role="main"] {
+  @extend %header-and-footer;
+  margin-top: 80px;
+  border-top: 3px solid lightgrey;
+  padding-top: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,11 +66,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: "Arial Black";
-  color: #666;
 }
 
 a {
-  color: rgb(74, 109, 242);
+  color: $col-links;
 }
 
 .post-meta {
@@ -81,7 +119,7 @@ td+td {
 
 .navigation {
   @extend %box;
-  background-color: oldlace;
+  background-color: $col-3;
   font-size: 82.5%;
   margin-top: 3rem;
 }
@@ -89,5 +127,5 @@ td+td {
 .intro {
   @extend %box;
   margin-bottom: 2em;
-  background-color: rgb(213, 238, 209);
+  background-color: $col-2;
 }
