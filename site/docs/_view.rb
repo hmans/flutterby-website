@@ -1,7 +1,4 @@
 def find_next_page
-  page.siblings.find { |n| n.page? && n.prefix > page.prefix }
-end
-
-def find_previous_page
-  page.siblings.reverse.find { |n| n.page? && n.prefix < page.prefix }
+  coll = page.parent.pages
+  coll.at(coll.index(page) + 1)
 end
