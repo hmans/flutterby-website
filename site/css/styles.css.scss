@@ -7,16 +7,21 @@ $col-4: rgb(115, 130, 193);
 
 $col-links: $col-4;
 
+
+* { box-sizing: inherit; }
+html, body { box-sizing: border-box; }
+
 body {
   background-color: #fff;
   color: #444;
   font: 17px/1.6 "Noto Sans","Helvetica Neue",Arial,Helvetica,sans-serif;
+  padding: 0; margin: 0;
 }
 
 div.container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 3vmax;
 }
 
 %header-and-footer {
@@ -30,6 +35,7 @@ header[role="main"] {
   nav ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 
     li {
       display: inline-block;
