@@ -1,12 +1,13 @@
 # Adding Files to Your Site
 
 <div class="intro" markdown="1">
-As you are likely aware, a website consists of **files** that will be served to clients by a **web server**. These files can be HTML files (like this page), CSS stylesheets, JavaScript files, XML or JSON data files -- there's probably more.
+A website built with Flutterby consists of **files** that will be **transformed** and eventually **served** to clients by your web server. You can add static files to your project, but also templates that will be rendered to HTML (or other formats.)
 </div>
 
 At its most basic, Flutterby operates by reading all files from your `site` directory and exporting them to static files in your `_build` directory (or serving them directly to a client when using `flutterby serve`.)
 
-It follows these rules when doing so:
+When doing so, Flutterby will follow some core rules:
+
 
 #### Use any structure
 

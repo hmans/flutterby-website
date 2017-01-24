@@ -83,6 +83,13 @@ a {
   color: $col-links;
 }
 
+hr {
+  height: 1;
+  border: none;
+  border-bottom: 1px dashed #e2e2e2;
+  margin: 2rem 0;
+}
+
 .post-meta {
   color: grey;
 }
@@ -142,4 +149,17 @@ td+td {
   @extend %box;
   margin-bottom: 2em;
   background-color: $col-2;
+}
+
+.hint {
+  @extend %box;
+  margin-bottom: 2em;
+  background-color: #f2f2f2;
+  border-left: 20px solid #ddd;
+
+  code { background-color: transparent; color: #555; padding: 0 }
+}
+
+.heart {
+  color: rgb(201, 41, 41);
 }

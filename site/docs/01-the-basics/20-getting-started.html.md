@@ -1,4 +1,4 @@
-# Quickstart
+# Getting Started
 
 <div markdown="1" class="intro">
 It's incredibly easy to get started with Flutterby -- either use the **built-in project generator**, or start from scratch with nothing but a **plain empty directory**.
@@ -41,3 +41,8 @@ flutterby build
 ~~~
 
 The static version of your website will be stored in the `_build` subdirectory. You can now upload the contents of your website to your server.
+
+
+
+**Hint:** Try `flutterby help` or `flutterby help <command>` to get a list of available options!
+{:.hint}

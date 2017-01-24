@@ -4,30 +4,23 @@ title: What is Flutterby?
 
 # What is Flutterby?
 
+<div class="intro" markdown="1">
 Flutterby is a tool for web developers who want to **rapidly develop websites and web-based applications**. You can use it for anything from simple, static websites, blogs and portfolios, to complex content-driven websites and applications.
 
-Flutterby can be used as a **static site generator** for easy deployment of your website, but it can also serve a **live version** once the need arises.
-
-It will happily render HTML from many supported input formats, pre-processes your CSS, bundle your JavaScript, and can be further enhanced with dashes of Ruby code.
-
-Flutterby allows you to **start simple** and grow your site step by step, without the need to switch to another framework once your site reaches a certain complexity.
+You can use Flutterby as a **static site generator**, with the occasional dash of Ruby to customize the generated output. But once your website requires it, Flutterby can also serve it in **live mode**, turning it into a **fully dynamic, server-rendered web application**. No need to migrate your project to another framework!
+</div>
 
 
-#### Flutterby is a website compiler
+#### Core Features
 
-Unlike other tools of its kind, Flutterby imposes no specific structure on your project -- it will simply read a source directory of files and export your website using the very same structure. You can have **Markdown files** that render to HTML just as well as **pure data files** that you can process further. And of course Flutterby will also happily compile all your frontend assets without the need for a separate JavaScript-based build pipeline. (But you can use one if that's your cup of tea.)
+- Compiles your website project to a **static site** that you can simply upload to your server for easy deployment.
 
+- Alternatively, runs your site in **Live Mode** on [Heroku](https://www.heroku.com/) or your own server. _TODO: add link to Live Mode guide._
 
-#### Flutterby is powered by Ruby
+- Supports a **high number of template engines and languages**, including ERB, Haml, Slim, Sass, CoffeeScript and many more. If something is missing, it's trivial to add support for it!
 
-Fluttery is **developed in Ruby**, and uses this to maximum effect. You can use Ruby-enhanced templates, add new view helper methods, or even create initializers that modify your site or its structure before being exported.
+- Supports **Ruby-powered templates and layouts** for rendering or further customizing your site. _TODO: link to examples_
 
-_TODO: add links to examples._
+- Flutterby is **data-aware**; you can query the contents of JSON, YAML etc. files, render them to HTML, and more. _TODO: add link to data file tutorial_
 
-
-
-#### Flutterby is crazy insane
-
-The way you build websites with Flutterby is radically different from what you may be used to from other static site generators or application frameworks.
-
-_TODO: add link to exciting future blog post about how Flutterby works._
+- Use **any structure you like**; Flutterby sees your website just like you do: as a tree of files. _TODO: link to site tree introduction._

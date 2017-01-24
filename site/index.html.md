@@ -19,4 +19,4 @@ bin/flutterby serve
 bin/flutterby build
 ~~~
 
-[Check out the documentation](/docs) for more.
+[Check out the documentation](/docs/) for more.

@@ -4,7 +4,7 @@
 A high-level overview of how Flutterby works internally.
 </div>
 
-Everything Flutterby does revolves around the **site tree**, a graph of Ruby objects that is generated at startup time. This is the typical lifecycle of a Flutterby application:
+Everything Flutterby does revolves around the **site tree**, a graph of Ruby objects (called **nodes**) that is generated at startup time. This is the typical lifecycle of a Flutterby application:
 
 1. **Import:** Flutterby crawls through the source directory of your project and builds the **site tree** from the files it encounters. Each file is represented as a **node** that has access to the file's contents as well as its metadata.
 
