@@ -122,6 +122,10 @@ td+td {
   padding: 0.8em 1em;
 }
 
+.summary {
+  color: grey;
+}
+
 .navigation {
   @extend %box;
   background-color: $col-3;

@@ -1,3 +1,13 @@
 h1 Flutterby Docs
 
-= render("./_toc.html")
+- for folder in siblings.select(&:folder?)
+  h3 = folder.title
+  
+  // render a summary when available
+  - if summary = folder.find("_summary")
+    .summary = render(summary)
+  
+  // render a list of pages within the folder
+  ul
+    - for page in folder.pages
+      li = link_to page.title, page

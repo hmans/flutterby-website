@@ -4,14 +4,18 @@ title: What is Flutterby?
 
 # What is Flutterby?
 
-Flutterby is a tool that enables **rapid development of websites and web-based applications**. It can be used to generate a **static version of your site** (for easy deployment), but it can also serve a **live version** once static serving no longer suffices.
+Flutterby is a tool for web developers who want to **rapidly develop websites and web-based applications**. You can use it for anything from simple, static websites, blogs and portfolios, to complex content-driven websites and applications.
+
+Flutterby can be used as a **static site generator** for easy deployment of your website, but it can also serve a **live version** once the need arises.
+
+It will happily render HTML from many supported input formats, pre-processes your CSS, bundle your JavaScript, and can be further enhanced with dashes of Ruby code.
 
 Flutterby allows you to **start simple** and grow your site step by step, without the need to switch to another framework once your site reaches a certain complexity.
 
 
 #### Flutterby is a website compiler
 
-Flutterby will read a source directory of files and use the very same structure when exporting your site. It will **render Markdown files to HTML** just as happily as it will **compile your frontend assets** -- you don't need to set up an additional JavaScript asset compilation pipeline (but if that is what you want, we won't stop you.)
+Unlike other tools of its kind, Flutterby imposes no specific structure on your project -- it will simply read a source directory of files and export your website using the very same structure. You can have **Markdown files** that render to HTML just as well as **pure data files** that you can process further. And of course Flutterby will also happily compile all your frontend assets without the need for a separate JavaScript-based build pipeline. (But you can use one if that's your cup of tea.)
 
 
 #### Flutterby is powered by Ruby
@@ -24,6 +28,6 @@ _TODO: add links to examples._
 
 #### Flutterby is crazy insane
 
-The way you build websites with Flutterby is radically different from what you may be used to from other static site generators or application frameworks. 
+The way you build websites with Flutterby is radically different from what you may be used to from other static site generators or application frameworks.
 
 _TODO: add link to exciting future blog post about how Flutterby works._
