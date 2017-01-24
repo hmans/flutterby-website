@@ -1,3 +1,7 @@
-/* insert your JavaScript here */
+initPage = function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block)
+  });
+}
 
-hljs.initHighlightingOnLoad();
+$(document).on("turbolinks:load", initPage)
