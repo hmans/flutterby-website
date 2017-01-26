@@ -1,13 +1,13 @@
-# Flutterby Roadmap
+# Flutterby Roadmap & Caveats
 
 Flutterby is currently **under heavy development**. Many of its APIs are still in flux, some of its headline features are yet to be implemented, and it probably still has a certain number of bugs.
 {:.intro}
 
 #### Yet to be implemented:
 
-- **Live Mode:** you can probably push your project to something like Heroku with a good `config.ru`, but there _will_ be issues, mostly around thread safety.
+- **Live Mode:** is currently highly experimental and should not (yet) be used. You can probably push your project to something like Heroku with a good `config.ru` and get away with it, but there _will_ be issues, mostly around thread safety.
 
-- **Node Persistence:** Flutterby lets you dynamically spawn new nodes, and some day in the future you will be able to persist them back to the file system.
+- **Node Persistence:** Flutterby lets you dynamically spawn new nodes, and some day in the future you will be able to persist them back to the file system, turning Flutterby in a simple database for data-light applications.
 
 
 #### In dire need of improvement:

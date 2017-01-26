@@ -43,10 +43,15 @@ header[role="main"] {
 
       a {
         display: inline-block;
+        line-height: 1;
+      }
+
+      a.button {
+        display: inline-block;
         background-color: #e8e8e8;
         color: black;
         text-decoration: none;
-        padding: 3px 10px;
+        padding: 6px 10px;
 
         border-radius: 7px 0;
 
@@ -99,6 +104,12 @@ ul.post-list {
   padding-left: 0;
 }
 
+
+main {
+  em {
+    color: grey;
+  }
+}
 
 /* embedded code */
 code {
