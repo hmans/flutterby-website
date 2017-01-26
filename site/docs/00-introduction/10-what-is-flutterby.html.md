@@ -24,3 +24,8 @@ You can use Flutterby as a **static site generator**, with the occasional dash o
 - Flutterby is **data-aware**; you can query the contents of JSON, YAML etc. files, render them to HTML, and more. _TODO: add link to data file tutorial_
 
 - Use **any structure you like**; Flutterby sees your website just like you do: as a tree of files. _TODO: link to site tree introduction._
+
+----
+
+**Hint:** At the bottom of every page on this website, you will find a link to its source file. Check it out!
+{:.hint}

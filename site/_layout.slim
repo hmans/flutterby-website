@@ -36,5 +36,6 @@ html
       
       footer role="main"
         p You're looking at #{link_to "flutterby.run", "/"}, the official website and documentation hub for Flutterby. Both are made with <span class="heart">❤</span> by <a href="http://hmans.io">Hendrik Mans</a> and friends.
+        = render "/_link_to_source.html", locals: { page: page }
 
   = render "/_google_analytics"
