@@ -2,9 +2,9 @@
 
 #### Adding Layouts
 
-A **layout file** is a special file named `_layout.<ext>` that, when rendering a page, will wrap the rendered output of that page. Layouts can be defined in any template languages supported by Flutterby; it comes with support for [ERB] and [Slim] out of the box, but many other languages can be added.
+A **layout file** is a special file named `_layout.html.<ext>` that, when rendering a page, will wrap the rendered output of that page. Layouts can be defined in any template languages supported by Flutterby; it comes with support for [ERB] and [Slim] out of the box, but many other languages can be added.
 
-Consider this example `_layout.slim` application layout:
+Consider this example `_layout.html.slim` application layout:
 
 ~~~
 doctype html

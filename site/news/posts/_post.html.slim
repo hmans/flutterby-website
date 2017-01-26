@@ -1,4 +1,4 @@
 article.post
-  h1 = link_to opts[:post].title, opts[:post]
+  h1 = link_to locals[:post].title, locals[:post]
   
-  = opts[:post].render
+  = locals[:post].render

@@ -2,4 +2,4 @@
 source "https://rubygems.org"
 
 gem "rake"
-gem "flutterby", github: "hmans/flutterby", branch: "master"
+gem "flutterby", github: "hmans/flutterby", branch: "render-refactor"
