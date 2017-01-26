@@ -19,7 +19,7 @@ You can use Flutterby as a **static site generator**, with the occasional dash o
 
 - Supports a **high number of template engines and languages**, including ERB, Haml, Slim, Sass, CoffeeScript and many more. If something is missing, it's trivial to add support for it!
 
-- Supports **Ruby-powered templates and layouts** for rendering or further customizing your site. _TODO: link to examples_
+- Supports **Ruby-powered [templates](/docs/the-basics/dynamically-rendered-files.html) and [layouts](/docs/the-basics/layouts.html)** for rendering or further customizing your site.
 
 - Flutterby is **data-aware**; you can query the contents of JSON, YAML etc. files, render them to HTML, and more. _TODO: add link to data file tutorial_
 
