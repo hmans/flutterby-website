@@ -42,7 +42,7 @@ Let's say you're building a blog, and you're saving your blog posts in a `/posts
   <% find("/posts").pages.each do |post| %>
     <li><%= link_to post.title, post %></li> %>
   <% end %>
-</li>
+</ul>
 ~~~
 
 Consider that `pages` (and its friends) returns a simple Ruby array which you can further filter. For example, you may want to remove any posts that are marked as a draft through their front matter:
@@ -52,5 +52,5 @@ Consider that `pages` (and its friends) returns a simple Ruby array which you ca
   <% find("/posts").pages.reject { |p| p.data.draft }.each do |post| %>
     <li><%= link_to post.title, post %></li> %>
   <% end %>
-</li>
+</ul>
 ~~~
